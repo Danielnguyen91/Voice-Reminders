@@ -7,7 +7,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-     android:background="@color/Shell"
+     android:background="@color/White"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.mobile_app.danien.voicereminder.MainActivity"
@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="List of Reminders"
-        android:textColor="@color/slade"
+        android:textColor="@color/earth_blue"
         android:textSize="20sp"
         android:id="@+id/textView" />
     <ImageView
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/listNote"
         android:layout_below="@+id/textView"
-        android:divider="#FFFFFF"
+        android:divider="#000000"
         android:dividerHeight="2px"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
