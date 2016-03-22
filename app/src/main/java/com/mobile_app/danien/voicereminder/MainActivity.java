@@ -1,5 +1,6 @@
 package com.mobile_app.danien.voicereminder;
 
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -30,7 +32,8 @@ public class MainActivity extends AppCompatActivity  {
         });
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        final ListView lv1 = (ListView) findViewById(R.id.listNote);
+        lv1.setAdapter(new CustomListAdapter(this,ReminderActivity.result));
     }
 
     @Override
